@@ -1,0 +1,63 @@
+body {
+    font-family: "Nico Moji";
+    background-color: #aafaaa; /* ポケモン世界風の背景色 */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px; /* 全体の横幅を広げる */
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title-section {
+    text-align: center;
+}
+
+.description-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gacha-section {
+    text-align: center;
+}
+
+.result-section {
+    display: flex; /* 結果を横一列に並べる */
+    flex-wrap: wrap; /* 狭い画面でも適切に折り返す */
+    justify-content: space-around; /* 要素を中央揃えにする */
+}
+
+.result-section .pokemon {
+    text-align: center;
+    margin: 10px;
+}
+
+.pokemon img {
+    max-width: 100px;
+    margin: 10px;
+}
+
+#resetButton {
+    margin-top: 20px;
+    background-color: #ffcc00; /* ガチャを回すボタンとは異なる目立つ色 */
+    color: #000000;
+}
+
+.gacha-section {
+    font-family: "Nico Moji";
+}
+
+.monster-ball {
+    width: 20px;
+    height: 20px;
+    background-color: #e73b00; /* モンスターボールの色 */
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 5px;
+}

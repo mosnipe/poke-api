@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポケモンガチャ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="title-section">
+            <h1>ポケモンガチャ</h1>
+        </div>
+        <div class="description-section">
+            <p>ポケモンのガチャガチャができるページです。ボタンをクリックしてガチャをまわそう！</p>
+        </div>
+        <div class="gacha-section">
+            <button id="gachaButton" onclick="spinGacha()">ガチャを回す</button>
+            <div id="resultSection" class="result-section"></div>
+            <button id="resetButton" onclick="resetGacha" style="display: none;">もう一度回す</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
