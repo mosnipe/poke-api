@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    max-width: 800px; /* 全体の横幅を広げる */
+    max-width: 80%; /* 全体の横幅を広げる */
     margin: 50px auto;
     background-color: #ffffff;
     padding: 20px;
@@ -27,30 +27,33 @@ body {
     text-align: center;
 }
 
+/* ガチャを回すともう一度回すのフォント追加 */
+#gachaButton,
+#resetButton {
+    font-family: "Nico Moji";
+}
+
 .result-section {
-    display: flex; /* 結果を横一列に並べる */
-    flex-wrap: wrap; /* 狭い画面でも適切に折り返す */
-    justify-content: space-around; /* 要素を中央揃えにする */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3列 */
+    grid-gap: 20px; /* グリッド間のスペース */
 }
 
 .result-section .pokemon {
     text-align: center;
-    margin: 10px;
-}
-
-.pokemon img {
-    max-width: 100px;
-    margin: 10px;
 }
 
 #resetButton {
     margin-top: 20px;
     background-color: #ffcc00; /* ガチャを回すボタンとは異なる目立つ色 */
     color: #000000;
+    text-align: center; /* 中央揃え */
 }
 
-.gacha-section {
-    font-family: "Nico Moji";
+
+.pokemon img {
+    max-width: 100px;
+    margin: 10px;
 }
 
 .monster-ball {

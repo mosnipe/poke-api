@@ -11,11 +11,14 @@ async function spinGacha() {
     document.getElementById("resetButton").style.display = "block";
 }
 
-function resetGacha() {
-    document.getElementById("resultSection").innerHTML = "";
-    document.getElementById("gachaButton").style.display = "block";
-    document.getElementById("resetButton").style.display = "none";
+async function resetGacha() {
+    const resultSection = document.getElementById("resultSection");
+    resultSection.innerHTML = "";
+
+    // もう一度ガチャを回す処理
+    await spinGacha();
 }
+
 
 async function getPokemonData() {
     const pokemonId = Math.floor(Math.random() * 898) + 1;
